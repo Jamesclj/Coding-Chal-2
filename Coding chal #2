@@ -1,0 +1,17 @@
+var recommendation = "Place"
+var rating = 5.0
+switch rating{
+case 4.5...5.0:
+    recommendation = "Highly Recommend"
+ case 3.5...4.4:
+    recommendation = "Recommended"
+
+case 2.5...3.4:
+    recommendation = "Moderately Recommended"
+
+case 0.0...2.5:
+    recommendation = "Not Recommended"
+default:
+    recommendation = "IDK"
+}
+print(recommendation)
